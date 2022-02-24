@@ -118,7 +118,7 @@ with open('./queens_test_cases.txt') as file:
     avg_cost_to_solve_random = total_search_cost/number_solved
 
     print(
-        f"Total number solved out of 800: {number_solved}",
+        f"Total number solved out of 800 (250 cost limit): {number_solved}",
         f"({percent_solved_random:.2f}%)")
     print(f"Average Cost(steps) to solve: {avg_cost_to_solve_random}")
 
