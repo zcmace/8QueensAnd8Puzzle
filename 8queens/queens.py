@@ -1,5 +1,6 @@
 import random
-# Evaluation logic taken from Yupan Huang
+# evaluate function logic taken from Yupan Huang
+# modified variable names and integer ranges to fit my environment
 # at the following link
 # https://github.com/HYPJUDY/EightQueensAndPuzzle/blob/master/EightQueensAndPuzzle/EightQueensProblem/SteepestHillClimbing.py
 
