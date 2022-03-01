@@ -45,8 +45,9 @@ def generate_next_state(state):
 
         evaluation_state = state.copy()
         # swap zero with item to right
-        evaluation_state[zero_index], evaluation_state[zero_index +
-                                                       1] = evaluation_state[zero_index + 1], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index + 1] = evaluation_state[zero_index + 1],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -57,8 +58,8 @@ def generate_next_state(state):
         evaluation_state = state.copy()
         # swap zero with item to left
         evaluation_state[zero_index],
-        evaluation_state[zero_index - 1] = evaluation_state[zero_index -
-                                                            1], evaluation_state[zero_index]
+        evaluation_state[zero_index - 1] = evaluation_state[zero_index - 1],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -71,8 +72,9 @@ def generate_next_state(state):
         evaluation_state = state.copy()
 
         # left
-        evaluation_state[zero_index], evaluation_state[zero_index -
-                                                       1] = evaluation_state[zero_index - 1], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index - 1] = evaluation_state[zero_index - 1],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -83,8 +85,9 @@ def generate_next_state(state):
         evaluation_state = state.copy()
 
         # right
-        evaluation_state[zero_index], evaluation_state[zero_index +
-                                                       1] = evaluation_state[zero_index + 1], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index + 1] = evaluation_state[zero_index + 1],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -100,8 +103,9 @@ def generate_next_state(state):
 
         evaluation_state = state.copy()
         # swap zero with item below
-        evaluation_state[zero_index], evaluation_state[zero_index +
-                                                       3] = evaluation_state[zero_index + 3], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index + 3] = evaluation_state[zero_index + 3],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -112,8 +116,9 @@ def generate_next_state(state):
     if row == 2:
         evaluation_state = state.copy()
         # swap zero with item above
-        evaluation_state[zero_index], evaluation_state[zero_index -
-                                                       3] = evaluation_state[zero_index - 3], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index - 3] = evaluation_state[zero_index - 3],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -126,8 +131,9 @@ def generate_next_state(state):
         evaluation_state = state.copy()
 
         # up
-        evaluation_state[zero_index], evaluation_state[zero_index -
-                                                       3] = evaluation_state[zero_index - 3], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index - 3] = evaluation_state[zero_index - 3],
+        evaluation_state[zero_index]
 
         score = evaluate(evaluation_state)
         if score < best_state_h:
@@ -138,8 +144,10 @@ def generate_next_state(state):
         evaluation_state = state.copy()
 
         # down
-        evaluation_state[zero_index], evaluation_state[zero_index +
-                                                       3] = evaluation_state[zero_index + 3], evaluation_state[zero_index]
+        evaluation_state[zero_index],
+        evaluation_state[zero_index + 3] = evaluation_state[zero_index + 3],
+        evaluation_state[zero_index]
+
         score = evaluate(evaluation_state)
         if score < best_state_h:
             best_state_h = score

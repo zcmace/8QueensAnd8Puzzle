@@ -47,7 +47,7 @@ else:
 
 if (solved != 0):
     avg_cost = total_cost_solved/solved
-else: 
+else:
     avg_cost = 0
 
 random_percent_solved = random_solved/800 * 100
@@ -58,7 +58,8 @@ print(
     f'# of test cases: 800\n\n'
     f'Total solved without random restart: {solved} | {percent_solved:.2f}%\n'
     f'Average cost for solution without random restart: {avg_cost:.2f}\n\n'
-    f'Total solved with random restart (10,000 cost limit):  {random_solved} | {random_percent_solved:.2f}%\n'
+    f'Total solved with random restart (10,000 cost limit): '
+    f'{random_solved} | {random_percent_solved:.2f}%\n'
     f'Average cost for solution with random restart: {avg_cost_rand:.2f}'
     f''
 )
