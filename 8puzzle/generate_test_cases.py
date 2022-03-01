@@ -1,5 +1,10 @@
 import random
 
+# simple function to generate test data for the 8 puzzle game
+# takes advantage of random library to shuffle a list of integers 0-8
+# this guarantees that one of each integer will be included in a random
+# order
+
 
 def generate():
     with open('./puzzle_test_cases.txt', 'w') as file:
